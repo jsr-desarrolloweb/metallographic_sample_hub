@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import {
   BrowserRouter as Router,
   Redirect,
@@ -16,7 +15,7 @@ function App() {
       <Switch>
         {routes.map((route) => (
           <Route
-            key={route.path}
+            key={route.key}
             path={route.path}
             component={route.component}
           />
