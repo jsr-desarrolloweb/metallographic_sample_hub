@@ -13,7 +13,7 @@ const Dashboard = (props) => {
     return (
         <div className="container">
             <h2>Dashboard</h2>
-            <h3>Welcome {userDetails.user.username}</h3>
+            <h3>Welcome {userDetails.username}</h3>
             <p>This is the dashbaord page</p>
             <button onClick={handleLogout}>Logout</button>
         </div>
