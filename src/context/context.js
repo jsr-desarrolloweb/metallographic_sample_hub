@@ -1,4 +1,5 @@
-import React, { createContext } from 'react'
+import {React,  createContext, useContext, useReducer} from 'react'
+import {AuthReducer, initialState} from './reducer'
 
 
 // AuthStateContext: This context object will contain the authentication token and user details
