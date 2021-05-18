@@ -13,6 +13,7 @@ export async function loginUser(dispatch, loginPayload) {
     dispatch({ type: 'REQUEST_LOGIN' });
     let response = await fetch(`${ROOT_URL}/auth/login`, requestOptions);
     let data = await response.json();
+    // console.log(data)
 
     if (data.user) {
       dispatch({ type: 'LOGIN_SUCCESS', payload: data });
@@ -20,7 +21,7 @@ export async function loginUser(dispatch, loginPayload) {
       return data
     }
 
-    dispatch({ type: 'LOGIN_ERROR', error: data.errors[0] });
+    dispatch({ type: 'LOGIN_ERROR', error: data.message });
     return;
   } catch (error) {
     dispatch({ type: 'LOGIN_ERROR', error: error });

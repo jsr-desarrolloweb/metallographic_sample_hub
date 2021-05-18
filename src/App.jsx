@@ -8,6 +8,8 @@ import {
 import routes from './config/routes.js'
 import {AuthProvider} from './context'
 
+import AppRoute from './components/AppRoute.js'
+
 
 
 function App() {
@@ -16,10 +18,11 @@ function App() {
       <Router>
         <Switch>
           {routes.map((route) => (
-            <Route
+            <AppRoute
               key={route.path}
               path={route.path}
               component={route.component}
+              isPrivate={route.isPrivate}
             />
           ))}
         </Switch>
