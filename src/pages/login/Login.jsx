@@ -22,8 +22,9 @@ const Login = (props) => {
             let response = await loginUser(dispatch, payload) //loginUser action makes the request and handles all the neccessary state changes
             // console.log(response)
             if (!response.user) return
-            setUsername('')
-            setPassword('')
+            // setUsername('')
+            // setPassword('')
+            // console.log(response.user) ---> comprobar role 
             props.history.push('/dashboard') //navigate to dashboard on success
         } catch (error) {
             console.log(error)

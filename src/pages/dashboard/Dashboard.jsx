@@ -3,7 +3,7 @@ import {useAuthDispatch, useAuthState, logout} from '../../context'
 
 const Dashboard = (props) => {
     const dispatch = useAuthDispatch()
-    const userDetails = useAuthState()
+    const {userDetails} = useAuthState()
 
     const handleLogout = () => {
         logout(dispatch) //call the logout action

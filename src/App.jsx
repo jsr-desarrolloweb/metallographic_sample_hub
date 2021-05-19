@@ -23,6 +23,7 @@ function App() {
               path={route.path}
               component={route.component}
               isPrivate={route.isPrivate}
+              role={route.role}
             />
           ))}
         </Switch>
