@@ -28,18 +28,14 @@ const Login = (props) => {
         } catch (error) {
             console.log(error)
         }
+        setLoginError(null)
         }
 
     return (
         <div className="login-container">
             <h2>Managing laboratory processes efficiently</h2>
             <p>Pill Hub will organize, manage and help you to never lose track of a sample and will do your job more efficient</p>
-            {
-                errorMessage ? <p>{errorMessage}</p> : null
-            }
-            {
-                loginError ? <p>{loginError}</p> : null
-            }
+
             <form className="login-form">
                 <div className="input-group">
                     <label htmlFor="username"></label>
@@ -62,6 +58,12 @@ const Login = (props) => {
                 <button className="btn" onClick={handleLogin} disabled={loading}>Sign in for Pill Hub</button>
             </form>
             <a className="forgotten-password" href="#">Have you forgotten your password?</a>
+            {
+                errorMessage ? <span className="error-msg">{errorMessage}</span> : null
+            }
+            {
+                loginError ? <span className="error-msg">{loginError}</span> : null
+            }
         </div>
     )
 }

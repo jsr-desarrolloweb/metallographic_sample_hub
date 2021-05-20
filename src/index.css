@@ -44,3 +44,8 @@ input{
   cursor: pointer;
   color: var(--my-grey);
 }
+
+.error-msg{
+  color: red;
+  margin: 20px;
+}

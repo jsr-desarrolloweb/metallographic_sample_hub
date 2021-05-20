@@ -15,8 +15,8 @@ import AppRoute from './components/AppRoute.js'
 function App() {
   return (
     <AuthProvider>
-      <NavBar/>
       <Router>
+      <NavBar/>  
         <Switch>
           {routes.map((route) => (
             <AppRoute

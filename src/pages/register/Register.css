@@ -1,4 +1,4 @@
-.login-container{
+.register-container{
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -7,26 +7,21 @@
     margin: 0px 20px;
 }
 
-.login-container h2{
-    font-size: 30px;
+.register-container h4{
     margin-top: 20px;
 }
 
-.login-container p{
-    margin-top: 20px;
-}
-
-.login-form{
-    margin-top: 30px;
+.register-form{
+    margin-top: 60px;
     width: 100%;
 }
 
-.login-form input{
+.register-form input{
     width: 90%;
     margin: 3px;    
 }
 
-.login-form button{
+.register-form button{
     width: 93.5%;
     margin: 7px;
     padding: 5px 0px 5px 10px;
@@ -34,6 +29,10 @@
     color: white;    
 }
 
-.forgotten-password{
-    font-size: 13px;
+.register-form select{
+    width: 93.5%;
+    margin: 3px; 
+    border-radius: 4px;
+    padding: 5px 0px 5px 10px;
+    border: 1px solid var(--my-grey);
 }

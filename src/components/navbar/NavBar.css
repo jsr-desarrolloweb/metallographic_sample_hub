@@ -5,6 +5,14 @@
     padding: 15px 25px;
 }
 
+.btn-navbar{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 7px;
+}
+
 .logo{
     color: var(--my-grey);
     text-decoration: none;
