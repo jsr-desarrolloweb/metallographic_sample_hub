@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.logo{
+    color: var(--my-grey);
+    text-decoration: none;
+}
+

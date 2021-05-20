@@ -1,0 +1,39 @@
+.login-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.login-container h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.login-container p{
+    margin-top: 20px;
+}
+
+.login-form{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.login-form input{
+    width: 90%;
+    margin: 3px;    
+}
+
+.login-form button{
+    width: 93.5%;
+    margin: 7px;
+    padding: 5px 0px 5px 10px;
+    background-color: var(--my-grey);
+    color: white;    
+}
+
+.forgotten-password{
+    font-size: 13px;
+}

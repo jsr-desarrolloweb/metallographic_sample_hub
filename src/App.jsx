@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import routes from './config/routes.js'
 import {AuthProvider} from './context'
-
+import NavBar from './components/navbar/NavBar.jsx'
 import AppRoute from './components/AppRoute.js'
 
 
@@ -15,6 +15,7 @@ import AppRoute from './components/AppRoute.js'
 function App() {
   return (
     <AuthProvider>
+      <NavBar/>
       <Router>
         <Switch>
           {routes.map((route) => (
