@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './TestsAdmin.css'
 import ListWithBtn from '../../components/list-with-button/ListWithBtn.jsx'
+import SlideBar from '../../components/slide-bar/SlideBar.jsx'
 import {useAuthState} from '../../context'
 
 const TestsAdmin = (props) => {
@@ -48,6 +49,7 @@ const TestsAdmin = (props) => {
 
     return (
         <div className="tests-admin-container">
+            <SlideBar active={"tests"}></SlideBar>
             <h2>Laboratory management</h2>
             <ListWithBtn items={pendingTests} type={"Pending"} btn={"Assign"} btnPath={""}/>
             <ListWithBtn items={toValidateTests} type={"Validate"} btn={"Validate"} btnPath={""}/>

@@ -27,6 +27,14 @@
     padding: 0px 5px;
 }
 
+.list-header .btn{
+    margin: 0px 3px;
+    font-size: 12px;
+    padding: 0px 5px;
+    color: white;
+    background-color: var(--my-grey);
+}
+
 hr{
     margin: 5px 0px;
 }

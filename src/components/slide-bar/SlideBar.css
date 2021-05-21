@@ -1,0 +1,32 @@
+.slide-bar-container{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: var(--my-grey);
+}
+
+
+
+
+.active{
+    background-color: var(--my-grey);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px 4px 0px 0px;
+}
+

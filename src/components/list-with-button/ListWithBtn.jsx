@@ -12,7 +12,7 @@ const ListWithBtn = (props) => {
             {/* {props.tests} */}
             <div className="list-header">
                 <h4>{props.type} Tests</h4>
-                <Link to={""}>See All</Link>
+                <Link className="btn" to={""}>See All</Link>
             </div>
             <hr />
             <div className="list-body">
