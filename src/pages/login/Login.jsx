@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect} from 'react'
 import {loginUser, useAuthState, useAuthDispatch} from '../../context'
 import './Login.css'
 
@@ -23,12 +23,18 @@ const Login = (props) => {
             let response = await loginUser(dispatch, payload) //loginUser action makes the request and handles all the neccessary state changes
             // console.log(response)
             if (!response.user) return
-            // console.log(response.user) ---> comprobar role 
-            props.history.push('/dashboard') //navigate to dashboard on success
+            
+            if(response.user.roles == "admin"){
+                props.history.push('/tests/admin')
+            }else{
+                props.history.push('/dashboard') //navigate to dashboard on success
+            }
+            
         } catch (error) {
             console.log(error)
         }
         setLoginError(null)
+        
         }
 
     return (

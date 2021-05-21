@@ -1,0 +1,17 @@
+.tests-admin-container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.tests-admin-container h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.list-with-btn-container:not(:last-child):after{
+    margin-bottom: 200px;
+}
