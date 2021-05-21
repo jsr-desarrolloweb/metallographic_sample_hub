@@ -1,0 +1,65 @@
+.docs-container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.docs-container h2{
+    margin-top: 40px;
+}
+
+.docs-container p{
+    font-size: 19px;
+    margin: 10px 0px;
+}
+
+.search-normative{
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-normative input, button{
+    margin: 5px;
+}
+
+.files{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+
+.file{
+    border: 1px solid var(--my-grey);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+    padding: 20px 30px;
+    margin: 5px;
+}
+
+.file:hover{
+    color: white;
+    background-color: var(--my-grey);
+    cursor: pointer;
+}
+
+.btn-docs{
+    font-size: 14px;
+    padding: 0px 5px;
+    color: white;
+    background-color: var(--my-grey);
+}

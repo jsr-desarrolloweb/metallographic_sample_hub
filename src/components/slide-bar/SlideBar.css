@@ -24,8 +24,8 @@
 
 
 .active{
-    background-color: var(--my-grey);
-    color: white;
+    background-color: white;
+    color: var(--my-grey);
     padding: 5px 10px;
     border-radius: 4px 4px 0px 0px;
 }

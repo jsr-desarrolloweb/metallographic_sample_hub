@@ -8,6 +8,7 @@ const SearchList = () => {
     const userDetails = useAuthState()
 
     const [samples, setSamples] = useState([])
+    const [sampleId, setSampleId] = useState("")
 
     useEffect(() => {
         const getAllSamples = async () => {
@@ -27,14 +28,31 @@ const SearchList = () => {
 
     }, [])
 
-    console.log(samples)
+    const searchSampleById = async (e) => {
+        if (e.key === 'Enter'){
+            const sample = await fetch('http://127.0.0.1:5000/sample/'+sampleId,
+        {
+            headers: {
+              'Authorization': userDetails.token
+            },
+            method: "GET"
+        }
+        )
+        .then((response)=>(response.json())
+        .then((data)=>setSamples([data.sample])))
+        }
+        
+    }
 
     return (
         <div className="search-list-container">
             <div className="list-header">
                 <h4>Track Samples</h4>
                 <div className="search-elements">
-                <input  type="text" name="sample_id" id="sample_id" placeholder="Sample Id..." />
+                <input
+                onKeyDown={(e)=>searchSampleById(e)}
+                onChange={(e)=>{setSampleId(e.target.value)}}
+                type="text" name="sample_id" id="sample_id" placeholder="Sample Id..." value={sampleId} />
                 <select className="btn" name="" id="">
                     <option value="all">All</option>
                     <option value="client">Client</option>
@@ -44,16 +62,16 @@ const SearchList = () => {
                 </div>
             </div>
             <div className="search-data">
-                <span>Order by: All</span>
-                <span></span>
+                <span>Order by: <strong>All</strong></span>
+                
             </div>
-            <div className="line"></div>
+            {/* <div className="line"></div> */}
             <div className="search-result">
                 {
                     samples != undefined ?
                     samples.map((item)=>(
                         <div className="search-item" key={item.id}>
-                           Id: {item.id} || Measures: {item.measures_number} || Date: {item.date}
+                           Id: {item.id} Measures: {item.measures_number}  Date: {item.date}
                             <Link className="btn" to={""}>Details</Link>
                         </div>
                     ))
