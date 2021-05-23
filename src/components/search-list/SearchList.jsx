@@ -50,9 +50,12 @@ const SearchList = () => {
                 <h4>Track Samples</h4>
                 <div className="search-elements">
                 <input
-                onKeyDown={(e)=>searchSampleById(e)}
-                onChange={(e)=>{setSampleId(e.target.value)}}
-                type="text" name="sample_id" id="sample_id" placeholder="Sample Id..." value={sampleId} />
+                    onKeyDown={(e)=>searchSampleById(e)}
+                    onChange={(e)=>{setSampleId(e.target.value)}}
+                    type="text" name="sample_id" id="sample_id" 
+                    placeholder="Sample Id..." 
+                    value={sampleId}
+                 />
                 <select className="btn" name="" id="">
                     <option value="all">All</option>
                     <option value="client">Client</option>

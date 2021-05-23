@@ -26,7 +26,11 @@ const Login = (props) => {
             
             if(response.user.roles == "admin"){
                 props.history.push('/tests/admin')
-            }else{
+            }
+            if(response.user.roles == "operator"){
+                props.history.push('/tests/operator')
+            }
+            else{
                 props.history.push('/dashboard') //navigate to dashboard on success
             }
             

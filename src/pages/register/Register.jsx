@@ -31,7 +31,7 @@ const Register = (props) => {
         )
         .then((response)=>response.json())
         .then((data)=>setRegisterError(data.message))
-
+        props.history.push('/login')
         return register
     }
 
