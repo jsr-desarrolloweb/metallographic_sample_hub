@@ -1,0 +1,45 @@
+.add-sample-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.add-sample-container h2, h3{
+    margin: 10px 0px;
+}
+
+.new-sample-container{
+    width: 100%;
+    border: 1px solid var(--my-grey);
+    margin: 20px 0px;
+    border-radius: 4px;
+}
+
+.new-sample-container input{
+    width: 90%;
+    margin: 10px;
+}
+
+.new-sample-container .btn{
+    color: white;
+    background-color: var(--my-grey);
+}
+
+.added-samples{
+    width: 100%;
+}
+
+
+.sample-item{
+    border: 1px solid var(--my-grey);
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

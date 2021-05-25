@@ -16,7 +16,7 @@ const TestsOperator = (props) => {
     useEffect(() => {
 
         const getAssignedTests = async () => {
-            const tests =  await fetch('http://127.0.0.1:5000/tests/assigned/'+user_id,
+            const tests =   fetch('http://127.0.0.1:5000/tests/assigned/'+user_id,
             {
                 headers: {
                   'Authorization': userDetails.token
@@ -29,7 +29,7 @@ const TestsOperator = (props) => {
         }
 
         const getInProgressTests = async () => {
-            const tests =  await fetch('http://127.0.0.1:5000/tests/in_progress/'+user_id,
+            const tests =   fetch('http://127.0.0.1:5000/tests/in_progress/'+user_id,
             {
                 headers: {
                   'Authorization': userDetails.token

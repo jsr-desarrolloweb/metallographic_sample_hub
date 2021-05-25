@@ -7,6 +7,7 @@ import AssignTest from '../pages/assign-test/AssignTest.jsx'
 import TestValidation from '../pages/test-validation/TestValidation.jsx'
 import Test from '../pages/test/Test.jsx'
 import Samples from '../pages/samples/Samples.jsx'
+import AddSample from '../pages/add-sample/AddSample.jsx'
 import Docs from '../pages/docs/Docs.jsx'
 import PageNotFound from '../pages/not_found/NotFound.jsx'
 
@@ -60,6 +61,12 @@ const routes = [
     {
         path: "/samples",
         component: Samples,
+        isPrivate: true
+    },
+    ,
+    {
+        path: "/add/sample/:testId",
+        component: AddSample,
         isPrivate: true
     },
     {

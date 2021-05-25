@@ -99,11 +99,11 @@ const Test = (props) => {
             <div className="line"></div>
             <div className="specifications">
 
-                <Link to={""} className="btn btn-report">Add Sample Info</Link>
+                <Link to={"/add/sample/"+test.id} className="btn btn-report">Add Sample Info</Link>
                 <h3>Parameters</h3>
                 <div className="parameters">
-                    <p>Sample Type: Epoxy</p>
-                    <p>Samples number: 3</p>
+                    <p>Sample Type: {test.sample_type}</p>
+                    <p>Samples number: {test.samples_number}</p>
                 </div>
 
                 <h3>Results</h3>
