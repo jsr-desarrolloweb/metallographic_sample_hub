@@ -1,0 +1,38 @@
+.start-test-container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.start-test-container h2,h4{
+    margin: 10px 0px;
+}
+
+.specifications{
+    margin: 10px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid var(--my-grey);
+    border-radius: 4px;
+    padding: 10px 5px;
+}
+
+
+
+.btn-report{
+    width: 100%;
+    color: white;
+    background-color: var(--my-grey);
+    font-size: 20px;
+    text-align: center;
+}
+
+#comment{
+    width: 80%;
+    margin: 10px 0px;
+}

@@ -44,14 +44,14 @@ const TestsOperator = (props) => {
 
         getAssignedTests()
         getInProgressTests()
-    }, [props])
+    }, [])
 
 
     return (
         <div className="tests-admin-container">
             <SlideBar active={"tests"}></SlideBar>
             <h2>Manage all your tests</h2>
-            <ListWithBtn items={assignedTests} type={"Assigned"} btn={"Start"} btnPath={""}/>
+            <ListWithBtn items={assignedTests} type={"Assigned"} btn={"Start"}  btnPath={"/test/"}/>
             <ListWithBtn items={inProgressTests} type={"InProgress"} btn={"Access"} btnPath={""}/>
         </div>
     )

@@ -62,7 +62,7 @@ const Register = (props) => {
                          />
                 </div>
                 <div className="input-group">
-                    <label htmlFor="cars"></label>
+                    <label htmlFor="roles"></label>
                     <select
                     value={role}
                     onChange={(e) => setRole(e.target.value)}

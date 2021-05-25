@@ -30,9 +30,9 @@ const Login = (props) => {
             if(response.user.roles == "operator"){
                 props.history.push('/tests/operator')
             }
-            else{
-                props.history.push('/dashboard') //navigate to dashboard on success
-            }
+            // else{
+            //     props.history.push('/dashboard') //navigate to dashboard on success
+            // }
             
         } catch (error) {
             console.log(error)

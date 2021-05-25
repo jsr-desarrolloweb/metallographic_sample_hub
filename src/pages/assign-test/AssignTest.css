@@ -1,0 +1,44 @@
+.assign-test-container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.assign-test-container h4{
+    margin: 10px 0px;
+}
+
+.test-container{
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid var(--my-grey);
+    border-radius: 4px;
+    padding: 10px 5px;
+}
+
+.available-operators{
+    width: 100%;
+}
+
+.available-operators .line{
+    margin: 10px 0px;
+}
+
+.operator-item{
+    border-radius: 4px;
+    padding: 5px 0px 5px 10px;
+    border: 1px solid var(--my-grey);
+    margin: 7px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.operator-item .btn {
+    font-size: 13px;
+    margin: 0px 5px;
+    padding: 0px 5px;
+}

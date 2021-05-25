@@ -21,7 +21,7 @@ const ListWithBtn = (props) => {
                     items_list.slice(0,5).map((item)=> 
                     <div className="test-item" key={item.test_code}>
                         {item.test_code} {item.name}
-                    <Link className="btn" to={""}>{props.btn}</Link>
+                    <Link className="btn"  to={props.btnPath+item.id}>{props.btn}</Link>
                     </div>
                     ) : 
                     <div className="test-item" >
