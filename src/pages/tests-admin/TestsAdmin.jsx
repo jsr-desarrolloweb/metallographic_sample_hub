@@ -52,7 +52,7 @@ const TestsAdmin = (props) => {
             <SlideBar active={"tests"}></SlideBar>
             <h2>Laboratory management</h2>
             <ListWithBtn items={pendingTests} type={"Pending"} btn={"Assign"} btnPath={"/assign/test/"}/>
-            <ListWithBtn items={toValidateTests} type={"Validate"} btn={"Validate"} btnPath={""}/>
+            <ListWithBtn items={toValidateTests} type={"Validate"} btn={"Validate"} btnPath={"/test/validation/"}/>
         </div>
     )
 }

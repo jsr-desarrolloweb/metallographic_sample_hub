@@ -4,6 +4,7 @@ import Register from '../pages/register/Register.jsx'
 import TestsAdmin from '../pages/tests-admin/TestsAdmin.jsx'
 import TestsOperator from '../pages/tests-operator/TestsOperator.jsx'
 import AssignTest from '../pages/assign-test/AssignTest.jsx'
+import TestValidation from '../pages/test-validation/TestValidation.jsx'
 import Test from '../pages/test/Test.jsx'
 import Samples from '../pages/samples/Samples.jsx'
 import Docs from '../pages/docs/Docs.jsx'
@@ -42,6 +43,12 @@ const routes = [
     {
         path: "/tests/operator",
         component: TestsOperator,
+        isPrivate: true
+    },
+    ,
+    {
+        path: "/test/validation/:testId",
+        component: TestValidation,
         isPrivate: true
     },
     {
