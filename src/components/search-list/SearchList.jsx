@@ -75,7 +75,7 @@ const SearchList = () => {
                     samples.map((item)=>(
                         <div className="search-item" key={item.id}>
                            Id: {item.id} Measures: {item.measures_number}  Date: {item.date}
-                            <Link className="btn" to={""}>Details</Link>
+                            <Link className="btn" to={"/sample/"+item.id}>Details</Link>
                         </div>
                     ))
                     : 

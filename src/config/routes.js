@@ -10,6 +10,8 @@ import Samples from '../pages/samples/Samples.jsx'
 import AddSample from '../pages/add-sample/AddSample.jsx'
 import Docs from '../pages/docs/Docs.jsx'
 import PageNotFound from '../pages/not_found/NotFound.jsx'
+import SampleDetail from '../pages/sample-detail/SampleDetail.jsx'
+
 
 // in this file we will define all the routes we want to have in this application.
 
@@ -63,6 +65,12 @@ const routes = [
         component: Samples,
         isPrivate: true
     },
+    ,
+    {
+        path: "/sample/:sampleId",
+        component: SampleDetail,
+        isPrivate: true
+    }
     ,
     {
         path: "/add/sample/:testId",

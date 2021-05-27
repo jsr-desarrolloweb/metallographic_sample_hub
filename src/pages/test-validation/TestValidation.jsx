@@ -80,7 +80,7 @@ const TestValidation = (props) => {
             <h2>Test Results</h2>
             <div className="line"></div>
             <div className="test-results">
-                <strong>Conformance:</strong> {!report.result ? "No Conformance" : "Yes"}
+                <strong>Conformance:</strong> {report.result ? "No Conformance" : "Yes"}
                 <strong>Comments:</strong> {report.comment ? report.comment : "None"}
             </div>
             <button onClick={()=>validateTest()} className="btn">Validate</button>
